@@ -1,0 +1,24 @@
+version: "3"
+
+services:
+  gl-web-node:
+    container_name: gl-web-node
+    image: gl-web/node
+    build: .docker/node
+    env_file:
+      - .docker/node/.env
+    volumes:
+      - ./:/var/www/app
+    command: bash -c "sh /tmp/${APP_ENV:-dev}.run.sh"
+    ports:
+      - "3000:3000"
+
+  gl-web-nginx:
+    container_name: gl-web-nginx
+    image: gl-web/nginx
+    build: .docker/nginx
+    volumes:
+      - ./build:/var/www
+    ports:
+      - "80:80"
+      - "443:443"

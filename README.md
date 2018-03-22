@@ -1,16 +1,21 @@
-## Simple React Redux TypeScript example
+GL web app:
+------------
+[![CircleCI](https://circleci.com/gh/wechka53/gl-web-app/tree/master.svg?style=shield)](https://circleci.com/gh/wechka53/gl-web-app/tree/master)
+### Requirements:
+   - [docker](https://www.docker.com/)
 
-[![CircleCI](https://circleci.com/gh/wechka53/react-ts-todo/tree/master.svg?style=shield)](https://circleci.com/gh/wechka53/react-ts-todo/tree/master)
+#### Technologies stack:
+   - [React.js](https://reactjs.org)   
+   - [nginx](https://nginx.org/ru/docs/)
+   
+### Quick start:
 
-#### Setup and run locally:
-`yarn install && yarn start`
-#### Docker support:
+Run `docker-compose up -d`
 
-Create container:  
-`docker-compose up -d`
-  
-Acces to running container:  
-`docker-compose exec node bash`
+App will be available at localhost:80
 
-Install dependencies and run app:   
-`yarn install && yarn start`
+### Troubleshoot:
+
+If you see an error `ERROR: Network ethernet declared as external, but could not be found.`
+Simple run `docker network create ethernet` and try again.
+   

@@ -1,0 +1,21 @@
+export namespace UserActions {
+  export const USER_LOGIN_REQUEST = 'USER_LOGIN_REQUEST';
+  export type USER_LOGIN_REQUEST = typeof UserActions.USER_LOGIN_REQUEST;
+
+  export const USER_LOGIN_SUCCESS = 'USER_LOGIN_SUCCESS';
+  export type USER_LOGIN_SUCCESS = typeof UserActions.USER_LOGIN_SUCCESS;
+
+  export const USER_LOGIN_FAILURE = 'USER_LOGIN_FAILURE';
+  export type USER_LOGIN_FAILURE = typeof UserActions.USER_LOGIN_FAILURE;
+
+
+  export const USER_REGISTER_REQUEST = 'USER_REGISTER_REQUEST';
+  export type USER_REGISTER_REQUEST = typeof UserActions.USER_REGISTER_REQUEST;
+
+  export const USER_REGISTER_SUCCESS = 'USER_REGISTER_SUCCESS';
+  export type USER_REGISTER_SUCCESS = typeof UserActions.USER_REGISTER_SUCCESS;
+
+  export const USER_REGISTER_FAILURE = 'USER_REGISTER_FAILURE';
+  export type USER_REGISTER_FAILURE = typeof UserActions.USER_REGISTER_FAILURE;
+
+}

@@ -4,7 +4,7 @@ import { createStore }                    from 'redux';
 import { Provider }                       from 'react-redux';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import App                   from 'components/App/App';
+import App from 'components/App/App';
 
 import registerServiceWorker from './registerServiceWorker';
 
